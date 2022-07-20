@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
                 toast.show()
                 val lemonImage: ImageView = findViewById(R.id.imageView)
                 lemonImage.setImageResource(R.drawable.lemon)
+                lemonImage.contentDescription = getString(R.string.LemonJuice)
                 val lemonText: TextView = findViewById(R.id.textView)
                 lemonText.text=getString(R.string.LemonJuice)
                 count+=1
@@ -34,6 +35,7 @@ class MainActivity : AppCompatActivity() {
             {
                 val glassImg: ImageView = findViewById(R.id.imageView)
                 glassImg.setImageResource(R.drawable.glass)
+                glassImg.contentDescription = getString(R.string.glass)
                 val glassTxt: TextView = findViewById(R.id.textView)
                 glassTxt.text=getString(R.string.glass)
                 count+=1
@@ -42,6 +44,7 @@ class MainActivity : AppCompatActivity() {
             {
                 val initialImg: ImageView = findViewById(R.id.imageView)
                 initialImg.setImageResource(R.drawable.lemonselect)
+                initialImg.contentDescription = getString(R.string.click_to_select_a_lemonade)
                 val initialTxt: TextView = findViewById(R.id.textView)
                 initialTxt.text=getString(R.string.click_to_select_a_lemonade)
                 count=0
@@ -53,6 +56,7 @@ class MainActivity : AppCompatActivity() {
                 {
                     val lemonadeImg: ImageView = findViewById(R.id.imageView)
                     lemonadeImg.setImageResource(R.drawable.lemonade)
+                    lemonadeImg.contentDescription = getString(R.string.Lemonade)
                     val lemonadeTxt: TextView = findViewById(R.id.textView)
                     lemonadeTxt.text=getString(R.string.Lemonade)
                     count=10
